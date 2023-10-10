@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.651)),
+    url(https://www.sdlgla.com/hubfs/Produtos%20Es/excavadeira-225-pedreira-esquerda-768px.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container h2 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.title {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title h2 span {
+  color: rgb(0, 197, 0);
+}
+
+.title p {
+  color: white;
+}
