@@ -9,13 +9,12 @@ const Header = () => {
           alt=""
         />
         <ul>
+
           <li>Inicio</li>
           <li>Sobre nosotros</li>
           <li>Servicios</li>
           <li>Certificaciones</li>
-          <li>
-            <a href="/contacto">contacto</a>
-          </li>
+          <a href="/contactenos">Contacnenos</a>
         </ul>
       </nav>
     </header>

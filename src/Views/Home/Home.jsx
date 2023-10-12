@@ -4,6 +4,7 @@ import Contador from "../../components/Contador/Contador";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import { useState, useEffect } from "react";
 
+
 const Home = () => {
   const [mostrarContador, setMostrarContador] = useState(false);
 

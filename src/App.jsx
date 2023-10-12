@@ -1,13 +1,20 @@
-import { useState } from "react";
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import Header from "./components/Header/Header";
 import Home from "./Views/Home/Home";
-import "./App.css";
+import Contactenos from './Views/Contactenos/Contactenos';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <Router>
+      <>
+        <Routes>
+        <Route path="/" element={<Home />} />
+          <Route path="/contactenos" element={<Contactenos />} />
+        </Routes>
+        <Footer/>
+      </>
+    </Router>
   );
 }
 

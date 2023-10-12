@@ -1,0 +1,7 @@
+.contenedorprincipal {
+  display: flex;
+  height: 100vh; /* Esto hará que ocupe toda la altura de la pantalla */
+  width: auto;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente los elementos */
+}
