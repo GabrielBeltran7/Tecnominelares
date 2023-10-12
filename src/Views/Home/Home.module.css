@@ -7,7 +7,17 @@ h5 {
   padding: 0;
 }
 
-.container {
+.container h2 {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.651)),
     url(https://www.sdlgla.com/hubfs/Produtos%20Es/excavadeira-225-pedreira-esquerda-768px.jpg);
@@ -15,24 +25,88 @@ h5 {
   background-size: cover;
 }
 
-.container h2 {
-  text-align: center;
-  color: white;
-  font-size: 50px;
-}
-
-.title {
-  height: 20rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .title h2 span {
-  color: rgb(0, 197, 0);
+  color: rgb(0, 167, 0);
 }
 
 .title p {
   color: white;
+  font-size: 30px;
+}
+
+.containerImages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.containerImages img {
+  width: 15rem;
+}
+
+.contadores {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateX(0px);
+  width: 100%;
+}
+
+.contador {
+  display: flex;
+  flex-direction: row;
+}
+
+.contador p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  gap: 10px;
+  font-weight: 800;
+}
+
+.contCarrousel {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.subTitulo h2 {
+  color: tomato;
+  margin: 20px;
+}
+
+.containerBeneficios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border-radius: 20px;
+}
+
+.containerBeneficios img {
+  width: 350px;
+  height: 600px;
+  border-radius: 20px 0 0 20px;
+  box-shadow: 5px 5px 15px black;
+}
+
+.beneficios {
+  background-color: orange;
+  width: 20%;
+  padding: 20px;
+  border-radius: 0 20px 20px 0;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: 800;
+  box-shadow: 5px 5px 15px black;
+}
+
+.beneficios h4 {
+  font-size: 25px;
+  margin: 10px;
 }

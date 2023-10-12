@@ -13,6 +13,9 @@ const Header = () => {
           <li>Sobre nosotros</li>
           <li>Servicios</li>
           <li>Certificaciones</li>
+          <li>
+            <a href="/contacto">contacto</a>
+          </li>
         </ul>
       </nav>
     </header>
