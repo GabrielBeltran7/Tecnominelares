@@ -20,16 +20,21 @@
  */
 
 .image {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(255, 174, 0, 0.13), rgba(255, 174, 0, 0.575)),
     url(https://res.cloudinary.com/dou3yyisb/image/upload/c_fill,w_720,h_405,ar_16:9,g_auto/v1697073792/TecnoMateriales/maquinaria8-ia_gcsmno.jpg);
   height: 30rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .imageDos {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(255, 174, 0, 0.13), rgba(255, 174, 0, 0.13)),
     url(https://res.cloudinary.com/dou3yyisb/image/upload/c_fill,w_720,h_405,ar_16:9,g_auto/v1697073795/TecnoMateriales/maquinaria9-ia_ojklf4.jpg);
   height: 30rem;
   background-position: center;
@@ -38,8 +43,12 @@
   background-size: cover;
 }
 
+.imageDos {
+  width: 100%;
+}
+
 .imageTres {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(255, 174, 0, 0.13), rgba(255, 174, 0, 0.13)),
     url(https://res.cloudinary.com/dou3yyisb/image/upload/c_fill,w_720,h_405,ar_16:9,g_auto/v1697073796/TecnoMateriales/maquinaria7-ia_rxoygj.jpg);
   height: 30rem;
   background-position: center;
@@ -49,11 +58,28 @@
 }
 
 .imageCuatro {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(255, 174, 0, 0.13), rgba(255, 174, 0, 0.13)),
     url(https://res.cloudinary.com/dou3yyisb/image/upload/c_fill,w_720,h_405,ar_16:9,g_auto/v1697073797/TecnoMateriales/maquinaria10-ia_hkxrka.jpg);
   height: 30rem;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
+}
+
+.image h3 {
+  font-weight: 800;
+  font-size: 50px;
+  color: orange;
+}
+
+.image span {
+  font-weight: 300;
+  color: black;
+}
+
+.image p {
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 15px;
 }

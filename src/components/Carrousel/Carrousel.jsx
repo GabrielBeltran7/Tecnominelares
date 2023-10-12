@@ -11,16 +11,37 @@ const contentStyle = {
 const Carrousel = () => (
   <Carousel autoplay effect="fade">
     <div className={style.image}>
-      <h3></h3>
+      <img
+        src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_nvjh7f.png"
+        alt=""
+        width="100px"
+      />
+      <h3>
+        TECNO<span>MINERALES</span>
+      </h3>
+      <p>Arenas & Gravas</p>
     </div>
-    <div>
-      <h3 className={style.imageDos}></h3>
+
+    <div className={style.imageDos}>
+      <img
+        src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_sin_fondo_qhdxvn.png"
+        alt=""
+        width="350px"
+      />
     </div>
-    <div>
-      <h3 className={style.imageTres}></h3>
+    <div className={style.imageTres}>
+      <img
+        src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_sin_fondo_qhdxvn.png"
+        alt=""
+        width="350px"
+      />
     </div>
-    <div>
-      <h3 className={style.imageCuatro}></h3>
+    <div className={style.imageCuatro}>
+      <img
+        src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_sin_fondo_qhdxvn.png"
+        alt=""
+        width="350px"
+      />
     </div>
   </Carousel>
 );

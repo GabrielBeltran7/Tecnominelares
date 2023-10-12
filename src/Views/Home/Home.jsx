@@ -4,7 +4,6 @@ import Contador from "../../components/Contador/Contador";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import { useState, useEffect } from "react";
 
-
 const Home = () => {
   const [mostrarContador, setMostrarContador] = useState(false);
 
@@ -20,10 +19,11 @@ const Home = () => {
     <div className={style.container}>
       <div className={style.title}>
         <Header />
-        <h2>
-          Tecno<span>Materiales</span>{" "}
-        </h2>
-        <p>Arenas & Gravas</p>
+        <img
+          src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_sin_fondo_qhdxvn.png"
+          alt=""
+          className={style.logo}
+        />
         <div className={style.containerImages}>
           <div>
             <img
@@ -104,8 +104,51 @@ const Home = () => {
       </div>
       <div className={style.Servicios}>
         <div className={style.card}>
-          <img src="" alt="" />
+          <img
+            src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
           <p>Descapotaje</p>
+          <button>Contactenos</button>
+        </div>
+        <div className={style.card}>
+          <img
+            src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <p>Excavación</p>
+          <button>Contactenos</button>
+        </div>
+        <div className={style.card}>
+          <img
+            src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <p>Escombros</p>
+          <button>Contactenos</button>
+        </div>
+        <div className={style.card}>
+          <img
+            src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <p>Descapotaje</p>
+          <button>Demolición</button>
+        </div>
+        <div className={style.card}>
+          <img
+            src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <p>Alquiler de Maquinaria</p>
+          <button>Contactenos</button>
+        </div>
+        <div className={style.card}>
+          <img
+            src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <p>Disposición</p>
           <button>Contactenos</button>
         </div>
       </div>
