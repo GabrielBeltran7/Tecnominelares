@@ -10,11 +10,11 @@ const Header = () => {
         />
         <ul>
           <li>Inicio</li>
-          <li>Sobre nosotros</li>
+          
           <li>Servicios</li>
           <li>Certificaciones</li>
           <a href="/contactenos">Contacnenos</a>
-          <a href="/sobrenosotros">Nosotros</a>
+          <a href="/sobrenosotros">Sobre Nosotros</a>
         </ul>
       </nav>
     </header>
