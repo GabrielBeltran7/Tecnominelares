@@ -1,0 +1,10 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.divContador {
+  background-color: transparent;
+  font-size: 50px;
+  color: white;
+}
