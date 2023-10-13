@@ -2,6 +2,7 @@ import style from "./Home.module.css";
 import Header from "../../components/Header/Header";
 import Contador from "../../components/Contador/Contador";
 import Carrousel from "../../components/Carrousel/Carrousel";
+import "animate.css";
 import { useState, useEffect } from "react";
 
 const Home = () => {
@@ -23,9 +24,10 @@ const Home = () => {
           src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_sin_fondo_qhdxvn.png"
           alt=""
           className={style.logo}
+          class="animate__animated animate__fadeInDown"
         />
         <div className={style.containerImages}>
-          <div>
+          <div class="animate__animated animate__fadeInLeft">
             <img
               src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697035700/TecnoMateriales/sello_ceritifcacion-removebg-preview_or5q5a.png"
               alt="Car Certificado"
@@ -35,27 +37,28 @@ const Home = () => {
               alt="CAR logo"
             />
           </div>
-          <div>
+          <div class="animate__animated animate__fadeInRight">
             <p>Nit: 901.674.891-6</p>
             <p>Registro CAR Nro. 59</p>
           </div>
         </div>
+
         <div className={style.contadores}>
           <div className={style.contador}>
-            <p>
-              +{mostrarContador && <Contador endValue={150} />} clientes
+            <p class="animate__animated animate__bounce">
+              +{mostrarContador && <Contador endValue={150} />}clientes
               satisfechos
             </p>
           </div>
 
           <div className={style.contador}>
-            <p>
+            <p class="animate__animated animate__bounce">
               +{mostrarContador && <Contador endValue={15} />} Años en la
               industria
             </p>
           </div>
           <div className={style.contador}>
-            <p>
+            <p class="animate__animated animate__bounce">
               +{mostrarContador && <Contador endValue={500} />}Trabajos
               realizados
             </p>

@@ -3,17 +3,22 @@ import style from "./Header.module.css";
 const Header = () => {
   return (
     <header>
-      <nav>
+      <nav class="animate__animated animate__fadeIn">
         <img
           src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_nvjh7f.png"
           alt=""
         />
         <ul>
-          <li>Inicio</li>
+          <li>
+            <a href="/">Inicio</a>
+          </li>
           <li>Sobre nosotros</li>
-          <li>Servicios</li>
-          <li>Certificaciones</li>
-          <a href="/contactenos">Contacnenos</a>
+          <li>
+            <a href="/servicios">Servicios</a>
+          </li>
+          <li>
+            <a href="/contactenos">Contactenos</a>
+          </li>
         </ul>
       </nav>
     </header>

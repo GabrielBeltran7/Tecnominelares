@@ -5,3 +5,7 @@
   align-items: center; /* Centra verticalmente los elementos */
   justify-content: center; /* Centra horizontalmente los elementos */
 }
+
+.header {
+  background-color: orange;
+}
