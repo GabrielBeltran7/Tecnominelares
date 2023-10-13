@@ -4,6 +4,7 @@ import Home from "./Views/Home/Home";
 import Contactenos from "./Views/Contactenos/Contactenos";
 import Footer from "./components/Footer/Footer";
 import Servicios from "./Views/Servicios/Servicios";
+import AboutUs from "./Views/About Us/AboutUs";
 
 function App() {
   return (
