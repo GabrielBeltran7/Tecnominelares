@@ -1,6 +1,9 @@
+import { useSelector } from "react-redux";
 import style from "./Header.module.css";
 
 const Header = () => {
+
+
   return (
     <header>
       <nav class="animate__animated animate__fadeIn">
@@ -12,7 +15,9 @@ const Header = () => {
           <li>
             <a href="/">Inicio</a>
           </li>
-          <li>Sobre nosotros</li>
+          <li>
+            <a href="/sobrenosotros">Sobre nosotros</a>
+          </li>
           <li>
             <a href="/servicios">Servicios</a>
           </li>

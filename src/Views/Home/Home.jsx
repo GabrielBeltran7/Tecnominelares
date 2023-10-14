@@ -3,10 +3,26 @@ import Header from "../../components/Header/Header";
 import Contador from "../../components/Contador/Contador";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import "animate.css";
+import { getServicios } from "../../Redux/Actions";
 import { useState, useEffect } from "react";
-
+import { useDispatch, useSelector } from 'react-redux'; 
+import Funcioncontactenos from "../../components/Funcioncontactenos/FuncionContactenos.jsx";
+import { Link } from 'react-router-dom';
+import Cards from "../../components/Cards/Cards";
 const Home = () => {
+  const dispatch = useDispatch(); // Usa useDispatch como una función
+
   const [mostrarContador, setMostrarContador] = useState(false);
+useEffect(() => {
+      dispatch(getServicios()); // Despacha la acción para obtener los servicios
+    }, []);
+
+
+    const servicios = useSelector((state)=>state.servicios)
+   
+
+
+
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -18,6 +34,7 @@ const Home = () => {
 
   return (
     <div className={style.container}>
+     
       <div className={style.title}>
         <Header />
         <img
@@ -105,56 +122,90 @@ const Home = () => {
       <div className={style.subTitulo}>
         <h2>Servicios</h2>
       </div>
-      <div className={style.Servicios}>
+
+<Cards servicios ={servicios}/>
+      {/* <div className={style.Servicios}>
+      
+
         <div className={style.card}>
+        <Link to={`/servicios/${servicios[0].id}`}>
           <img
             src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
           />
+          </Link>
           <p>Descapotaje</p>
-          <button>Contactenos</button>
+        
+        
+          <Funcioncontactenos/>
         </div>
+
+
         <div className={style.card}>
+        
           <img
             src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
           />
           <p>Excavación</p>
-          <button>Contactenos</button>
+         
+          
+          <Funcioncontactenos/>
         </div>
+
+
         <div className={style.card}>
+           
           <img
             src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
           />
           <p>Escombros</p>
-          <button>Contactenos</button>
+         
+          
+          <Funcioncontactenos/>
         </div>
+
+
+
         <div className={style.card}>
+      
           <img
             src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
           />
           <p>Descapotaje</p>
-          <button>Demolición</button>
+       
+          
+          <Funcioncontactenos/>
         </div>
+
+
         <div className={style.card}>
+        
           <img
             src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
           />
           <p>Alquiler de Maquinaria</p>
-          <button>Contactenos</button>
+        
+          <Funcioncontactenos/>
         </div>
+
+
         <div className={style.card}>
+      
           <img
             src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
           />
           <p>Disposición</p>
-          <button>Contactenos</button>
+         
+          <Funcioncontactenos/>
         </div>
-      </div>
+
+
+      </div> */}
     </div>
   );
 };
