@@ -5,24 +5,20 @@ import Carrousel from "../../components/Carrousel/Carrousel";
 import "animate.css";
 import { getServicios } from "../../Redux/Actions";
 import { useState, useEffect } from "react";
-import { useDispatch, useSelector } from 'react-redux'; 
-import Funcioncontactenos from "../../components/Funcioncontactenos/FuncionContactenos.jsx";
-import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
+import { TfiCheckBox } from "react-icons/tfi";
+import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { FcApproval, FcInspection, FcDiploma2 } from "react-icons/fc";
 import Cards from "../../components/Cards/Cards";
 const Home = () => {
   const dispatch = useDispatch(); // Usa useDispatch como una función
 
   const [mostrarContador, setMostrarContador] = useState(false);
-useEffect(() => {
-      dispatch(getServicios()); // Despacha la acción para obtener los servicios
-    }, []);
+  useEffect(() => {
+    dispatch(getServicios()); // Despacha la acción para obtener los servicios
+  }, []);
 
-
-    const servicios = useSelector((state)=>state.servicios)
-   
-
-
-
+  const servicios = useSelector((state) => state.servicios);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -34,7 +30,6 @@ useEffect(() => {
 
   return (
     <div className={style.container}>
-     
       <div className={style.title}>
         <Header />
         <img
@@ -94,118 +89,97 @@ useEffect(() => {
       <div className={style.containerBeneficios}>
         <div className={style.beneficios}>
           <div>
-            <h4>Certificación</h4>
+            <h4>
+              {" "}
+              <FcApproval /> Certificación
+            </h4>
             <p>
               Certificamos la disposición de sus escombros de forma rápida y
               segura.
             </p>
           </div>
           <div>
-            <h4>Regulación</h4>
+            <h4>
+              {" "}
+              <FcInspection />
+              Regulación
+            </h4>
             <p>
               Estamos avalados por la Secretaria Dstrital de Ambiente con el pin
               xxxx-xx-xxxx
             </p>
           </div>
           <div>
-            <h4>Cumplimiento</h4>
+            <h4>
+              <FcDiploma2 />
+              Cumplimiento
+            </h4>
             <p>
               Aseguramos la adecuada disposición de los materiales para el
               cuidado del medio ambiente, autorizados con la resolución xxxx/xx
             </p>
           </div>
         </div>
-        <div>
-          <img src="https://res.cloudinary.com/dou3yyisb/image/upload/c_fill,ar_9:16,g_auto/v1697079405/TecnoMateriales/maquinaria11_ld9br4.jpg" />
+        <div className={style.aptos}>
+          <h3>
+            {" "}
+            <FaCheckCircle className={style.iconApto} /> Materiales aptos:
+          </h3>
+          <>
+            <h4>
+              Productos de excavación, nivelaciones y sobrantes de la adecuación
+              del terreno:
+            </h4>
+            <p>Tierras y materiales pétreos no contaminados</p>
+          </>
+          <>
+            <h4>Productos usados para cimentaciones y pillotajes:</h4>
+            <p>Arcillas, Limos, Lodos inertes.</p>
+          </>
+          <>
+            <h4>Pétreos:</h4>
+            <p>
+              Arenas, gravas, gravillas, trozos de ladrillos y bloques,
+              cerámicas, sobrantes de mezcla de cementos y concretos.
+            </p>
+          </>
+        </div>
+
+        <div className={style.noAptos}>
+          <h3>
+            <FaTimesCircle className={style.iconNoApto} /> Materiales no aptos:
+          </h3>
+          <>
+            <h4>Residuos Peligrosos</h4>
+
+            <p>
+              Desechos de productos químicos, emulsiones, alquitrán, pinturas,
+              disolventes orgánicos, aceites, asfaltos y otros elementos
+              peligrosos
+            </p>
+          </>
+          <>
+            <h4>Residuos especiales:</h4>
+            <p>
+              Poliestireno-icopor, carton-yeso (drywall), asbesto, lodos
+              residuales de compuestos, asfalto.
+            </p>
+          </>
+          <>
+            <h4>Residuos contaminados:</h4>
+            <TfiCheckBox />
+            <p>
+              Materiales aprovechables que se encuentren contaminados con
+              residuos peligrosos y especiales.
+            </p>
+          </>
         </div>
       </div>
       <div className={style.subTitulo}>
         <h2>Servicios</h2>
       </div>
 
-<Cards servicios ={servicios}/>
-      {/* <div className={style.Servicios}>
-      
-
-        <div className={style.card}>
-        <Link to={`/servicios/${servicios[0].id}`}>
-          <img
-            src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
-          </Link>
-          <p>Descapotaje</p>
-        
-        
-          <Funcioncontactenos/>
-        </div>
-
-
-        <div className={style.card}>
-        
-          <img
-            src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
-          <p>Excavación</p>
-         
-          
-          <Funcioncontactenos/>
-        </div>
-
-
-        <div className={style.card}>
-           
-          <img
-            src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
-          <p>Escombros</p>
-         
-          
-          <Funcioncontactenos/>
-        </div>
-
-
-
-        <div className={style.card}>
-      
-          <img
-            src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
-          <p>Descapotaje</p>
-       
-          
-          <Funcioncontactenos/>
-        </div>
-
-
-        <div className={style.card}>
-        
-          <img
-            src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
-          <p>Alquiler de Maquinaria</p>
-        
-          <Funcioncontactenos/>
-        </div>
-
-
-        <div className={style.card}>
-      
-          <img
-            src="https://images.pexels.com/photos/12988318/pexels-photo-12988318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
-          <p>Disposición</p>
-         
-          <Funcioncontactenos/>
-        </div>
-
-
-      </div> */}
+      <Cards servicios={servicios} />
     </div>
   );
 };

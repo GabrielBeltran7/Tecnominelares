@@ -73,30 +73,29 @@ h5 {
 }
 
 .contCarrousel {
-  margin-top: 20px;
   width: 100%;
+}
+
+.subTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subTitulo h2 {
   color: black;
-  margin: 20px;
   background-color: orange;
-  border-radius: 10px;
+  width: 90%;
+  margin: 20px;
 }
 
 .containerBeneficios {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   border-radius: 20px;
-}
-
-.containerBeneficios img {
-  width: 350px;
-  height: 600px;
-  border-radius: 20px 0 0 20px;
-  box-shadow: 5px 5px 15px rgb(66, 66, 66);
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .beneficios {
@@ -110,6 +109,87 @@ h5 {
   justify-content: space-evenly;
   font-weight: 800;
   box-shadow: 5px 5px 15px rgb(66, 66, 66);
+}
+.beneficios h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.aptos {
+  background-color: orange;
+  width: 350px;
+  height: 35rem;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: 800;
+  box-shadow: 5px 5px 15px rgb(66, 66, 66);
+}
+
+.aptos h3 {
+  text-align: center;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.iconApto {
+  color: rgb(0, 230, 0);
+}
+
+.noAptos {
+  background-color: orange;
+  width: 350px;
+  height: 35rem;
+  padding: 20px;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: 800;
+  box-shadow: 5px 5px 15px rgb(66, 66, 66);
+}
+
+.noAptos h3 {
+  text-align: center;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.iconNoApto {
+  color: rgb(230, 0, 0);
+}
+
+.aptos h4 {
+  text-align: start;
+  font-size: 25px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.aptos p {
+  margin-left: 5px;
+  padding: 0;
+}
+
+.noAptos h4 {
+  text-align: start;
+  font-size: 25px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.noAptos p {
+  margin-left: 5px;
+  padding: 0;
 }
 
 .beneficios h4 {
@@ -136,7 +216,12 @@ h5 {
   width: 250px;
 }
 
-.card {
-  width: 30%;
-  margin: 20px;
+.materialesAptosYnoAptos {
+  background-color: orange;
+  width: 550px;
+  height: 35rem;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  border-radius: 20px;
 }

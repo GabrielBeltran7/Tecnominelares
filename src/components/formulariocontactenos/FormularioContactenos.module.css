@@ -17,7 +17,8 @@
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
-}.select {
+}
+.select {
   width: 100%;
   padding: 10px;
   margin: 5px 5px; /* Ajusta el margen según tus preferencias */
@@ -73,7 +74,7 @@ textarea {
 }
 
 button {
-  background-color: #DAA520;
+  background-color: #daa520;
   color: white;
   padding: 12px 24px;
   border: none;
@@ -81,11 +82,9 @@ button {
   cursor: pointer;
   font-size: 18px;
   transition: background-color 0.3s;
+  border: 1px solid black;
 }
 
 button:hover {
-  background-color: #B8860B;
+  background-color: #855f00;
 }
-
-
-

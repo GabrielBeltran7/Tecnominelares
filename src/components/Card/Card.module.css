@@ -1,62 +1,67 @@
 .cardcontainer {
-    background-color: #333;
-    border-radius: 10px;
-    width: 20rem;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    font-size: 1rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-    overflow: hidden;
-  }
-  .cardcontainer:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
-    background-color: #f8b303;
-    color: #ff0000;
-    margin: 30px;
-    cursor: pointer;
-  }
-  
-  .cardtitle {
-    border-radius: 10px 10px 0 0;
-    background-color: #000;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-  
-  .image {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .carddivisor {
-    height: 1px;
-    background-color: #020000;
-  }
-  
-  .cardinfo {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  h4 {
-    margin: 0;
-    padding: 0;
-    font-size: 1.2rem;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+  background-color: #333;
+  border-radius: 10px;
+  width: 20rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, color 0.3s ease;
+  overflow: hidden;
+}
+.cardcontainer:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+  background-color: #cc9200;
+  color: #000;
+  cursor: pointer;
+}
+
+.cardtitle {
+  border-radius: 10px 10px 0 0;
+  background-color: #000;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.image {
+  height: 350px;
+  border-radius: 10px 10px 0 0;
+}
+.image img {
+  width: fit-content;
+}
+
+.carddivisor {
+  height: 1px;
+  background-color: #020000;
+}
+
+.cardinfo {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  padding: 0;
+  font-size: 1.2rem;
+  margin: 10px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
