@@ -6,7 +6,7 @@ import "animate.css";
 import { getServicios } from "../../Redux/Actions";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { TfiCheckBox } from "react-icons/tfi";
+import { BiCheckDouble } from "react-icons/bi";
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 import { FcApproval, FcInspection, FcDiploma2 } from "react-icons/fc";
 import Cards from "../../components/Cards/Cards";
@@ -125,54 +125,59 @@ const Home = () => {
             {" "}
             <FaCheckCircle className={style.iconApto} /> Materiales aptos:
           </h3>
-          <>
+          <div>
             <h4>
               Productos de excavación, nivelaciones y sobrantes de la adecuación
               del terreno:
             </h4>
             <p>Tierras y materiales pétreos no contaminados</p>
-          </>
-          <>
+          </div>
+          <div>
             <h4>Productos usados para cimentaciones y pillotajes:</h4>
-            <p>Arcillas, Limos, Lodos inertes.</p>
-          </>
-          <>
+
+            <p> Arcillas, Limos, Lodos inertes.</p>
+          </div>
+          <div>
             <h4>Pétreos:</h4>
             <p>
               Arenas, gravas, gravillas, trozos de ladrillos y bloques,
               cerámicas, sobrantes de mezcla de cementos y concretos.
             </p>
-          </>
+          </div>
         </div>
 
         <div className={style.noAptos}>
           <h3>
             <FaTimesCircle className={style.iconNoApto} /> Materiales no aptos:
           </h3>
-          <>
+          <div>
             <h4>Residuos Peligrosos</h4>
-
-            <p>
-              Desechos de productos químicos, emulsiones, alquitrán, pinturas,
-              disolventes orgánicos, aceites, asfaltos y otros elementos
-              peligrosos
-            </p>
-          </>
-          <>
+            <div className={style.containerIconText}>
+              <p>
+                Desechos de productos químicos, emulsiones, alquitrán, pinturas,
+                disolventes orgánicos, aceites, asfaltos y otros elementos
+                peligrosos
+              </p>
+            </div>
+          </div>
+          <div>
             <h4>Residuos especiales:</h4>
-            <p>
-              Poliestireno-icopor, carton-yeso (drywall), asbesto, lodos
-              residuales de compuestos, asfalto.
-            </p>
-          </>
-          <>
+            <div className={style.containerIconText}>
+              <p>
+                Poliestireno-icopor, carton-yeso (drywall), asbesto, lodos
+                residuales de compuestos, asfalto.
+              </p>
+            </div>
+          </div>
+          <div>
             <h4>Residuos contaminados:</h4>
-            <TfiCheckBox />
-            <p>
-              Materiales aprovechables que se encuentren contaminados con
-              residuos peligrosos y especiales.
-            </p>
-          </>
+            <div className={style.containerIconText}>
+              <p>
+                Materiales aprovechables que se encuentren contaminados con
+                residuos peligrosos y especiales.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div className={style.subTitulo}>
