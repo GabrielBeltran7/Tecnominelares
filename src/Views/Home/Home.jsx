@@ -32,12 +32,17 @@ const Home = () => {
     <div className={style.container}>
       <div className={style.title}>
         <Header />
-        <img
-          src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_sin_fondo_qhdxvn.png"
-          alt=""
-          className={style.logo}
-          class="animate__animated animate__fadeInDown"
-        />
+        <div class={`animate__animated animate__backInDown ${style.image}`}>
+          <img
+            src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_nvjh7f.png"
+            alt=""
+            width="100px"
+          />
+          <h1>
+            TECNO<span>MINERALES</span>
+          </h1>
+          <p>Arenas & Gravas</p>
+        </div>
         <div className={style.containerImages}>
           <div
             class="animate__animated animate__fadeInLeft"
