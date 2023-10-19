@@ -36,7 +36,7 @@ h5 {
 }
 
 .logo {
-  width: 400px;
+  width: 45%;
 }
 
 .containerImages {
@@ -257,6 +257,6 @@ h5 {
     flex-direction: column;
   }
   .logo {
-    width: 350px;
+    width: 250px;
   }
 }

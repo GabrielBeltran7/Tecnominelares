@@ -55,6 +55,7 @@
 }
 .parrafo img {
   border-radius: 20px;
+  width: 350px;
 }
 
 .bloqueDos {
@@ -119,4 +120,31 @@ p {
 
 .icon {
   font-size: 120px;
+}
+
+@media screen and (max-width: 910px) {
+  .parrafo {
+    flex-direction: column;
+  }
+  .sectionCreadores {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+  .parrafo {
+    width: 100%;
+  }
+  .bloqueUno {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .parrafo {
+    width: 100%;
+  }
+  .parrafo img {
+    border-radius: 20px;
+    width: 200px;
+  }
 }

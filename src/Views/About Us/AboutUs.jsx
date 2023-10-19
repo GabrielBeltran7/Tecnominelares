@@ -25,7 +25,6 @@ export default function AboutUs() {
             <img
               src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_sin_fondo_qhdxvn.png"
               alt=""
-              width="350"
             />
           </p>
         </div>
