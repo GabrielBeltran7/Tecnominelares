@@ -22,6 +22,11 @@ export default function AboutUs() {
             lineamientos ambientales para el correcto desarrollo de los procesos
             que involucran el aprovechamiento de residuos de construcción y
             demolición, pétreos y pétreos asfálticos.
+            <img
+              src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_sin_fondo_qhdxvn.png"
+              alt=""
+              width="350"
+            />
           </p>
         </div>
       </section>
@@ -29,6 +34,11 @@ export default function AboutUs() {
         <div className={style.bloqueUno}>
           <h3 className={style.subTitulo}>Nuestra misión</h3>
           <p className={style.parrafo}>
+            <img
+              src="https://media.istockphoto.com/id/1456699734/es/foto/el-ingeniero-habla-con-el-contratista-para-supervisar-y-planificar-el-trabajo.jpg?s=612x612&w=0&k=20&c=SO3LobM8bAm3Em34dew9D93qGMUwb7LVCd_rjFUpp20="
+              alt=""
+              width="350"
+            />
             Es ofrecer a nuestros clientes una experiencia para prevenir,
             reducir y controlar los niveles de contaminación. Para ello
             trabajaremos incasablemente en la concientización de la importancia
