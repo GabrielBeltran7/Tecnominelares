@@ -250,9 +250,13 @@ h5 {
   .containerImages {
     flex-direction: column;
     text-align: center;
+    z-index: 0;
   }
 
   .contadores {
     flex-direction: column;
+  }
+  .logo {
+    width: 350px;
   }
 }

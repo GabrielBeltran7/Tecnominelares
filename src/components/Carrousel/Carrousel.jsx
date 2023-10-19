@@ -43,6 +43,20 @@ const Carrousel = () => (
         width="350px"
       />
     </div>
+    <div className={style.imageCinco}>
+      <img
+        src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_sin_fondo_qhdxvn.png"
+        alt=""
+        width="350px"
+      />
+    </div>
+    <div className={style.imageSeis}>
+      <img
+        src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_sin_fondo_qhdxvn.png"
+        alt=""
+        width="350px"
+      />
+    </div>
   </Carousel>
 );
 export default Carrousel;

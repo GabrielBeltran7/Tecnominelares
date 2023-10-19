@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { getServiciosId } from "../../Redux/Actions";
 import style from "./Servicios.module.css";
 import Header from "../../components/Header/Header";
+import GaleriaMaquinaria from "../../components/GaleriaMaquinaria/GaleriaMaquinaria";
 
 const Servicios = () => {
   const dispatch = useDispatch();
@@ -28,6 +29,7 @@ const Servicios = () => {
           <img src={servicios.imagen} alt="" />
         </div>
         <p>{servicios.descripcion}</p>
+        {id == 5 ? <GaleriaMaquinaria /> : ""}
         <FuncionContactenos />
       </div>
     </div>
