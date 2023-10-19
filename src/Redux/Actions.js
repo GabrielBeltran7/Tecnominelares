@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { GET_SERVICIOS } from "./ActionsTypes";
+import { GET_SERVICIOS, GET_SERVIVICIOS_ID } from "./ActionsTypes";
 import servicios from "./Servicios";
 
 export const getServicios = () => {
@@ -11,6 +11,18 @@ export const getServicios = () => {
       });
     } catch (error) {
       throw error;
+    }
+  };
+};
+
+export const getServiciosId = (id) => {
+  return async (dispatch) => {
+    const servicio = servicios.find((servicio) => servicio.id == id);
+    if (servicio) {
+      dispatch({
+        type: GET_SERVIVICIOS_ID,
+        payload: servicio,
+      });
     }
   };
 };

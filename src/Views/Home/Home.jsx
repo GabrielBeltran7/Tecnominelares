@@ -39,7 +39,10 @@ const Home = () => {
           class="animate__animated animate__fadeInDown"
         />
         <div className={style.containerImages}>
-          <div class="animate__animated animate__fadeInLeft">
+          <div
+            class="animate__animated animate__fadeInLeft"
+            className={style.imageCertificados}
+          >
             <img
               src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697035700/TecnoMateriales/sello_ceritifcacion-removebg-preview_or5q5a.png"
               alt="Car Certificado"
@@ -50,8 +53,10 @@ const Home = () => {
             />
           </div>
           <div class="animate__animated animate__fadeInRight">
-            <p>Nit: 901.674.891-6</p>
-            <p>Registro CAR Nro. 59</p>
+            <p>S.A.S</p>
+            <p>NIT: 901.674.891-6</p>
+            <p>REGISTRO CAR Nro. 59</p>
+            <p>REGISTRO CAR Nro. 60</p>
           </div>
         </div>
 

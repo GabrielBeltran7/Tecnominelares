@@ -11,7 +11,7 @@ header {
   color: black;
   width: 100%;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 header nav {
@@ -42,4 +42,20 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: white;
+}
+
+/* Reglas de medios para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 750px) {
+  header nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
 }

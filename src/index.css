@@ -14,3 +14,18 @@ body {
 ._contCarrousel_enwkg_149 {
   margin: 0;
 }
+
+._contCarrousel_199k5_149 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ant-carousel.css-dev-only-do-not-override-amq5gd {
+  width: 90%;
+}
+
+ul.ant-dropdown-menu.ant-dropdown-menu-root.ant-dropdown-menu-vertical.ant-dropdown-menu-light.css-dev-only-do-not-override-amq5gd {
+  background-color: orange;
+  font-weight: 800;
+}
