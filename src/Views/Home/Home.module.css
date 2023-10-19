@@ -19,7 +19,7 @@ h5 {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  background: linear-gradient(rgba(255, 174, 0, 0.5), rgba(255, 174, 0, 0.13)),
+  background: linear-gradient(rgba(107, 73, 0, 0.74), rgba(153, 105, 0, 0.322)),
     url(https://res.cloudinary.com/dou3yyisb/image/upload/v1697086288/TecnoMateriales/fondo_mxkczd.jpg);
   background-position: center;
   background-size: cover;
@@ -239,6 +239,32 @@ h5 {
   font-size: 5rem;
 }
 
+.image {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image img {
+  width: 150px;
+}
+.image h1 {
+  font-size: 50px;
+  color: rgb(255, 182, 46);
+  font-weight: 900;
+}
+
+.image span {
+  font-weight: 100;
+  color: black;
+}
+
+.image p {
+  color: black;
+}
+
 .containerIconText {
   display: flex;
   justify-content: center;
@@ -256,7 +282,12 @@ h5 {
   .contadores {
     flex-direction: column;
   }
-  .logo {
-    width: 250px;
+}
+
+@media screen and (max-width: 750px) {
+  .image h1 {
+    font-size: 35px;
+    color: rgb(255, 182, 46);
+    font-weight: 900;
   }
 }
