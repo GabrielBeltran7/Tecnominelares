@@ -31,7 +31,9 @@ const Home = () => {
   return (
     <div className={style.container}>
       <div className={style.title}>
-        <Header />
+        <div className={style.containerNav}>
+          <Header />
+        </div>
         <div class={`animate__animated animate__backInDown ${style.image}`}>
           <img
             src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_nvjh7f.png"

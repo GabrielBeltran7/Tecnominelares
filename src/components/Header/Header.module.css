@@ -1,77 +1,84 @@
-header,
-nav,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: transparent;
-  color: black;
-  width: 100%;
-  font-weight: 800;
-  font-size: 18px;
-}
-
 header nav {
+  background-color: transparent;
+  height: 90px;
+  color: white;
+  width: 100%;
+}
+
+.navContainer {
+  background-color: transparent;
   display: flex;
-  justify-content: space-around;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
   align-items: center;
 }
 
-header nav img {
+.logoHeader {
+  background-color: transparent;
   width: 100px;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-}
-
-header nav ul li {
-  margin-inline: 10px;
-  font-size: larger;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-header nav ul li a:hover {
-  color: white;
-}
-
-.abrirMenu,
-.cerrarMenu {
+.Label {
   display: none;
 }
 
-/* Reglas de medios para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
-@media (max-width: 750px) {
-  .abrirMenu {
+.navInput {
+  display: none;
+}
+
+.navMenu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3em;
+  font-size: 20px;
+}
+
+.navItem {
+  text-decoration: none;
+  color: white;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.navItem:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.navItem::after {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path 0.3s;
+}
+
+@media screen and (max-width: 750px) {
+  header .nav .navContainer .Label {
     display: block;
+    cursor: pointer;
   }
 
-  header nav ul {
-    position: absolute;
-    flex-direction: column;
-    top: 0;
-    right: 0;
+  header .nav .navContainer .navMenu {
+    position: fixed;
+    top: 60px;
     bottom: 0;
-    align-items: start;
-    background-color: rgba(230, 149, 0);
-    padding: 20px;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    visibility: hidden;
-    z-index: 9999;
+    background: #df9800;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+    z-index: 1;
   }
 
-  .navVisible {
-    opacity: 1;
-    visibility: visible;
+  header .nav .navContainer .navInput:checked + .navMenu {
+    clip-path: circle(100% at center);
   }
 }

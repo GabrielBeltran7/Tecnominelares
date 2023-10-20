@@ -2,9 +2,7 @@ import React from "react";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, message, Space } from "antd";
 import style from "./DropdownComp.module.css";
-const onClick = ({ key }) => {
-  message.info(`Click on item ${key}`);
-};
+const onClick = ({ key }) => {};
 const items = [
   {
     label: (
