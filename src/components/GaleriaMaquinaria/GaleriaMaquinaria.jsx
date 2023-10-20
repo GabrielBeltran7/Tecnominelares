@@ -5,7 +5,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 export default function GaleriaMaquinaria() {
   return (
     <ImageList
-      sx={{ width: 500, height: 450, marginBottom: 5 }}
+      sx={{ width: 400, height: 450, marginBottom: 5 }}
       cols={3}
       rowHeight={164}
     >

@@ -51,7 +51,6 @@
 .inputGroup {
   display: flex;
   align-items: center;
-  flex-basis: 70%;
 }
 
 input {

@@ -272,6 +272,10 @@ h5 {
   gap: 5px;
 }
 
+.containerNav {
+  width: 100%;
+}
+
 @media screen and (max-width: 750px) {
   .containerImages {
     flex-direction: column;
@@ -281,6 +285,9 @@ h5 {
 
   .contadores {
     flex-direction: column;
+  }
+  .imageCertificados img {
+    width: 150px;
   }
 }
 
