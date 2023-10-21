@@ -64,7 +64,5 @@ export const servicios = [
        contribuir a un futuro más limpio y saludable. Deja que nos encarguemos de la disposición de residuos para que puedas centrarte en 
        tu proyecto principal con tranquilidad.`
     }
-   
-    
   ];
   export default servicios;
