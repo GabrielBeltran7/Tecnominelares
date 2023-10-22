@@ -193,7 +193,7 @@ const Home = () => {
         </div>
       </div>
       <div className={style.subTitulo}>
-        <h2>SERVICIOS:RECIBIMOS</h2>
+        <h2>RECIBIMOS</h2>
       </div>
 
       <Cards servicios={servicios} />
