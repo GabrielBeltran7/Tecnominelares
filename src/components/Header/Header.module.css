@@ -1,45 +1,84 @@
-header,
-nav,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: transparent;
-  color: black;
-  width: 100%;
-  font-weight: 800;
-  font-size: 20px;
-}
-
 header nav {
+  background-color: transparent;
+  height: 90px;
+  color: white;
+  width: 100%;
+}
+
+.navContainer {
+  background-color: transparent;
   display: flex;
-  justify-content: space-around;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
   align-items: center;
 }
 
-header nav img {
+.logoHeader {
+  background-color: transparent;
   width: 100px;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
+.Label {
+  display: none;
 }
 
-header nav ul li {
-  margin-inline: 10px;
-  font-size: larger;
+.navInput {
+  display: none;
 }
 
-header nav ul li a {
+.navMenu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3em;
+  font-size: 20px;
+}
+
+.navItem {
   text-decoration: none;
-  color: black;
+  color: white;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
-header nav ul li a:hover {
-  color: white;
+.navItem:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.navItem::after {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path 0.3s;
+}
+
+@media screen and (max-width: 750px) {
+  header .nav .navContainer .Label {
+    display: block;
+    cursor: pointer;
+  }
+
+  header .nav .navContainer .navMenu {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background: #df9800;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+    z-index: 1;
+  }
+
+  header .nav .navContainer .navInput:checked + .navMenu {
+    clip-path: circle(100% at center);
+  }
 }

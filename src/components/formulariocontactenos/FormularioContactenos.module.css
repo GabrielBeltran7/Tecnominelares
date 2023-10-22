@@ -9,7 +9,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   height: 38%;
   max-width: 100%;
-  width: 30%;
+  width: 70%;
 }
 
 .title {
@@ -51,7 +51,6 @@
 .inputGroup {
   display: flex;
   align-items: center;
-  flex-basis: 70%;
 }
 
 input {
@@ -87,4 +86,10 @@ button {
 
 button:hover {
   background-color: #855f00;
+}
+
+@media (max-width: 750px) {
+  .formContainer {
+    width: 80%;
+  }
 }

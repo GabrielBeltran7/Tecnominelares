@@ -65,3 +65,21 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 750px) {
+  .cardcontainer {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cardcontainer {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cardcontainer {
+    width: 100%;
+  }
+}

@@ -31,15 +31,25 @@ const Home = () => {
   return (
     <div className={style.container}>
       <div className={style.title}>
-        <Header />
-        <img
-          src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_sin_fondo_qhdxvn.png"
-          alt=""
-          className={style.logo}
-          class="animate__animated animate__fadeInDown"
-        />
+        <div className={style.containerNav}>
+          <Header />
+        </div>
+        <div class={`animate__animated animate__backInDown ${style.image}`}>
+          <img
+            src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_nvjh7f.png"
+            alt=""
+            width="100px"
+          />
+          <h1>
+            TECNO<span>MINERALES</span>
+          </h1>
+          <p>Arenas & Gravas</p>
+        </div>
         <div className={style.containerImages}>
-          <div class="animate__animated animate__fadeInLeft">
+          <div
+            class="animate__animated animate__fadeInLeft"
+            className={style.imageCertificados}
+          >
             <img
               src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697035700/TecnoMateriales/sello_ceritifcacion-removebg-preview_or5q5a.png"
               alt="Car Certificado"
@@ -50,8 +60,10 @@ const Home = () => {
             />
           </div>
           <div class="animate__animated animate__fadeInRight">
-            <p>Nit: 901.674.891-6</p>
-            <p>Registro CAR Nro. 59</p>
+            <p>S.A.S</p>
+            <p>NIT: 901.674.891-6</p>
+            <p>REGISTRO CAR Nro. 59</p>
+            <p>REGISTRO CAR Nro. 60</p>
           </div>
         </div>
 
@@ -181,7 +193,7 @@ const Home = () => {
         </div>
       </div>
       <div className={style.subTitulo}>
-        <h2>Servicios</h2>
+        <h2>SERVICIOS:RECIBIMOS</h2>
       </div>
 
       <Cards servicios={servicios} />
