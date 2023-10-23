@@ -9,7 +9,7 @@ const contentStyle = {
   background: "#364d79",
 };
 const Carrousel = () => (
-  <Carousel autoplay effect="fade">
+  <Carousel autoplay effect="fade" className={style.carrousel}>
     <div className={style.image}>
       <img
         src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_nvjh7f.png"
@@ -57,6 +57,21 @@ const Carrousel = () => (
         width="350px"
       />
     </div>
+    <div className={style.imageSiete}>
+      <img
+        src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_sin_fondo_qhdxvn.png"
+        alt=""
+        width="350px"
+      />
+    </div>
+    <div className={style.imageOcho}>
+      <img
+        src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_sin_fondo_qhdxvn.png"
+        alt=""
+        width="350px"
+      />
+    </div>
   </Carousel>
 );
+
 export default Carrousel;
