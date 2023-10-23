@@ -5,6 +5,8 @@ import Contactenos from "./Views/Contactenos/Contactenos";
 import Footer from "./components/Footer/Footer";
 import Servicios from "./Views/Servicios/Servicios";
 import AboutUs from "./Views/About Us/AboutUs";
+import style from "./Views/Home/Home.module.css"
+import Whatsapp from "./components/Whatsapp/Whatsapp";
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
           <Route path="/servicios/:id" element={<Servicios />} />
           <Route path="/sobrenosotros" element={<AboutUs />} />
         </Routes>
+        <div className={style.whatsapp}>
+        <Whatsapp />
+      </div>
         <Footer />
       </>
     </Router>

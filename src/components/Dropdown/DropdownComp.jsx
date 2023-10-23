@@ -9,7 +9,7 @@ const items = [
   {
     label: (
       <a className={style.submenu} href={`/servicios/1`}>
-        Descapotaje
+        Descapote
       </a>
     ),
     key: "1",
@@ -22,14 +22,14 @@ const items = [
     ),
     key: "2",
   },
-  {
-    label: (
-      <a className={style.submenu} href="/servicios/3">
-        Escombros
-      </a>
-    ),
-    key: "3",
-  },
+  // {
+  //   label: (
+  //     <a className={style.submenu} href="/servicios/3">
+  //       Escombros
+  //     </a>
+  //   ),
+  //   key: "3",
+  // },
   {
     label: (
       <a className={style.submenu} href="/servicios/4">
@@ -38,14 +38,14 @@ const items = [
     ),
     key: "4",
   },
-  {
-    label: (
-      <a className={style.submenu} href="/servicios/5">
-        Alquiler de maquinaria
-      </a>
-    ),
-    key: "5",
-  },
+  // {
+  //   label: (
+  //     <a className={style.submenu} href="/servicios/5">
+  //       Alquiler de maquinaria
+  //     </a>
+  //   ),
+  //   key: "5",
+  // },
   {
     label: (
       <a className={style.submenu} href="/servicios/6">

@@ -99,12 +99,12 @@ const FormularioContactenos = () => {
             required
           >
             <option value="">Selecciona una Opcion</option>
-            <option value="DESCAPOTAJE">DESCAPOTAJE</option>
-            <option value="EXCAVACION">EXCAVACIÓN</option>
-            <option value="ESCOMBROS">ESCOMBROS</option>
-            <option value="DEMOLICION">DEMOLICIÓN</option>
-            <option value="ALQUILER">ALQUILER DE MAQUINARIA</option>
-            <option value="ALQUILER">DISPOSICION</option>
+            <option value="DESCAPOTAJE">Productos de excavacion y sobrantes de la adecuación de terrenos</option>
+            <option value="EXCAVACION">Productos de cimentaciones y pilotaje: arcillas, bentonitas y demas</option>
+            <option value="ESCOMBROS">Petreos</option>
+            <option value="DEMOLICION">No petreos</option>
+            <option value="ALQUILER">Otros</option>
+            
           </select>
         </div>
         <div className={styles.formGroup}>
