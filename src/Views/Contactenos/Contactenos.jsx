@@ -10,6 +10,7 @@ const Contactenos = () => {
         <Header />
       </div>
       <div className={style.contenedorprincipal}>
+        <h2 className={style.titleContacto}>Contactenos</h2>
         <Direccion />
         <FormularioContactenos />
       </div>
