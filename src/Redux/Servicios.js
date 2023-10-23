@@ -23,18 +23,18 @@ export const servicios = [
       estamos equipados para cumplir con los más altos estándares de calidad y seguridad. Confía en nosotros para que tu proyecto de 
       excavación se realice sin problemas y con resultados sobresalientes.`,
   },
-  {
-    id: 3,
-    nombre: "ESCOMBROS",
-    imagen:
-      "https://previews.123rf.com/images/ginasanders/ginasanders1505/ginasanders150500090/39447748-escombros-de-construcci%C3%B3n-en-un-sitio-de-construcci%C3%B3n-durante-los-trabajos-de-renovaci%C3%B3n-en-un.jpg",
-    descripcion: `Nuestro servicio de gestión de escombros se ocupa de la recolección, transporte y disposición adecuada de residuos 
-      de construcción. Sabemos la importancia de mantener limpios los sitios de trabajo y de cumplir con las regulaciones ambientales.
-      Trabajamos en estrecha colaboración con empresas de construcción y contratistas para garantizar una gestión responsable de los 
-      escombros generados en sus proyectos. Nuestro equipo de expertos se encargará de todo, desde la carga de los escombros hasta su 
-      disposición en instalaciones de reciclaje o vertederos autorizados. Con nosotros, puedes estar seguro de que tus residuos de 
-      construcción se manejarán de manera sostenible y de acuerdo con las normativas vigentes.`,
-  },
+  // {
+  //   id: 3,
+  //   nombre: "ESCOMBROS",
+  //   imagen:
+  //     "https://previews.123rf.com/images/ginasanders/ginasanders1505/ginasanders150500090/39447748-escombros-de-construcci%C3%B3n-en-un-sitio-de-construcci%C3%B3n-durante-los-trabajos-de-renovaci%C3%B3n-en-un.jpg",
+  //   descripcion: `Nuestro servicio de gestión de escombros se ocupa de la recolección, transporte y disposición adecuada de residuos 
+  //     de construcción. Sabemos la importancia de mantener limpios los sitios de trabajo y de cumplir con las regulaciones ambientales.
+  //     Trabajamos en estrecha colaboración con empresas de construcción y contratistas para garantizar una gestión responsable de los 
+  //     escombros generados en sus proyectos. Nuestro equipo de expertos se encargará de todo, desde la carga de los escombros hasta su 
+  //     disposición en instalaciones de reciclaje o vertederos autorizados. Con nosotros, puedes estar seguro de que tus residuos de 
+  //     construcción se manejarán de manera sostenible y de acuerdo con las normativas vigentes.`,
+  // },
   {
     id: 4,
     nombre: "DEMOLICION",
@@ -47,17 +47,17 @@ export const servicios = [
        minimizando el impacto ambiental y garantizando la seguridad en el lugar de trabajo. Confía en nuestra experiencia 
        en demolición para que tu proyecto se realice sin problemas y según tus especificaciones.`,
   },
-  {
-    id: 5,
-    nombre: "ALQUILER DE MAQUINARIA",
-    imagen:
-      "https://res.cloudinary.com/dou3yyisb/image/upload/v1697086288/TecnoMateriales/fondo_mxkczd.jpg",
-    descripcion: `Nuestro servicio de alquiler de maquinaria pesada incluye una amplia gama de equipos, desde retroexcavadoras
-       y volquetas hasta otros equipos de construcción de alta calidad. Estamos comprometidos en proporcionarte la maquinaria adecuada 
-       para tus necesidades de construcción, ya sea para excavaciones, transporte de materiales o cualquier otra tarea.
-      Nuestros equipos son mantenidos en óptimas condiciones y están disponibles para alquiler a corto y largo plazo. 
-      Confía en nuestra flota de maquinaria confiable y en nuestro equipo de soporte técnico para asegurarte de que tu proyecto se realice de manera eficiente y exitosa.`,
-  },
+  // {
+  //   id: 5,
+  //   nombre: "ALQUILER DE MAQUINARIA",
+  //   imagen:
+  //     "https://res.cloudinary.com/dou3yyisb/image/upload/v1697086288/TecnoMateriales/fondo_mxkczd.jpg",
+  //   descripcion: `Nuestro servicio de alquiler de maquinaria pesada incluye una amplia gama de equipos, desde retroexcavadoras
+  //      y volquetas hasta otros equipos de construcción de alta calidad. Estamos comprometidos en proporcionarte la maquinaria adecuada 
+  //      para tus necesidades de construcción, ya sea para excavaciones, transporte de materiales o cualquier otra tarea.
+  //     Nuestros equipos son mantenidos en óptimas condiciones y están disponibles para alquiler a corto y largo plazo. 
+  //     Confía en nuestra flota de maquinaria confiable y en nuestro equipo de soporte técnico para asegurarte de que tu proyecto se realice de manera eficiente y exitosa.`,
+  // },
   {
     id: 6,
     nombre: "DISPOSICION",

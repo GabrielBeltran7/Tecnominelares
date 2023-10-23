@@ -1,6 +1,5 @@
 import style from "./Home.module.css";
 import Header from "../../components/Header/Header";
-import Contador from "../../components/Contador/Contador";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import "animate.css";
 import { getServicios } from "../../Redux/Actions";
@@ -10,6 +9,7 @@ import { BiCheckDouble } from "react-icons/bi";
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 import { FcApproval, FcInspection, FcDiploma2 } from "react-icons/fc";
 import Cards from "../../components/Cards/Cards";
+import Whatsapp from "../../components/Whatsapp/Whatsapp";
 const Home = () => {
   const dispatch = useDispatch(); // Usa useDispatch como una función
 
@@ -43,7 +43,14 @@ const Home = () => {
           <h1>
             TECNO<span>MINERALES</span>
           </h1>
-          <p>Arenas & Gravas</p>
+          <p>Arenas & Gravas S.A.S</p>
+          <div class="animate__animated animate__fadeInRight">
+            <p>NIT: 901.674.891-6</p>
+            <p>REGISTRO CAR Nro. 59</p>
+            <p>REGISTRO CAR Nro. 60</p>
+          </div>
+
+
         </div>
         <div className={style.containerImages}>
           <div
@@ -59,35 +66,10 @@ const Home = () => {
               alt="CAR logo"
             />
           </div>
-          <div class="animate__animated animate__fadeInRight">
-            <p>S.A.S</p>
-            <p>NIT: 901.674.891-6</p>
-            <p>REGISTRO CAR Nro. 59</p>
-            <p>REGISTRO CAR Nro. 60</p>
-          </div>
+         
         </div>
 
-        <div className={style.contadores}>
-          <div className={style.contador}>
-            <p class="animate__animated animate__bounce">
-              +{mostrarContador && <Contador endValue={150} />}clientes
-              satisfechos
-            </p>
-          </div>
-
-          <div className={style.contador}>
-            <p class="animate__animated animate__bounce">
-              +{mostrarContador && <Contador endValue={15} />} Años en la
-              industria
-            </p>
-          </div>
-          <div className={style.contador}>
-            <p class="animate__animated animate__bounce">
-              +{mostrarContador && <Contador endValue={500} />}Trabajos
-              realizados
-            </p>
-          </div>
-        </div>
+       
       </div>
       <div className={style.subTitulo}>
         <h2>Nuestra maquinaria</h2>
@@ -197,6 +179,7 @@ const Home = () => {
       </div>
 
       <Cards servicios={servicios} />
+     
     </div>
   );
 };
