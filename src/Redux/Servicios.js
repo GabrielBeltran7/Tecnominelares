@@ -4,12 +4,13 @@ export const servicios = [
     nombre: "MATERIAL DE DESCAPOTE",
     imagen:
       "https://res.cloudinary.com/dou3yyisb/image/upload/v1697748231/TecnoMateriales/WhatsApp_Image_2023-10-06_at_6.29.00_PM_1_spsu4e.jpg",
-    descripcion: `Nuestro servicio de descapotaje es la solución ideal para aquellos que buscan transformar espacios cubiertos en 
-      áreas al aire libre llenas de luz y aire fresco. Con una amplia experiencia en la eliminación de techos y estructuras, 
-      nuestro equipo altamente capacitado se encargará de realizar el descapotaje de manera precisa y segura.
-      Ya sea para terrazas, patios o jardines, te ayudaremos a crear un ambiente abierto y acogedor. La calidad, 
-      la eficiencia y la satisfacción del cliente son nuestros principales valores. Con nuestro servicio de descapotaje,
-       puedes confiar en que tu proyecto se llevará a cabo con profesionalismo y excelencia.`,
+    descripcion: `Nuestro servicio de "Material de Descapote" es la solución completa para la preparación de terrenos y remoción de capas 
+    superficiales en la industria de la construcción. Con más de [número de años] de experiencia, ofrecemos una amplia variedad de materiales, 
+    incluyendo tierra, arena y roca, de la más alta calidad y libre de contaminantes, entregados puntualmente en el lugar de tu elección. 
+    Nuestro equipo de expertos te brindará un servicio personalizado, adaptándose a las necesidades únicas de tu proyecto,
+     y a precios competitivos en el mercado. Además, nos comprometemos con prácticas sostenibles y el cumplimiento de
+      regulaciones ambientales y de seguridad. Tu satisfacción es nuestra prioridad, y estamos disponibles para atender todas tus consultas
+       y necesidades.`,
   },
   {
     id: 2,
