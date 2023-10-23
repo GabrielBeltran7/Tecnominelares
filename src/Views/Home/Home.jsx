@@ -5,11 +5,11 @@ import "animate.css";
 import { getServicios } from "../../Redux/Actions";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { BiCheckDouble } from "react-icons/bi";
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 import { FcApproval, FcInspection, FcDiploma2 } from "react-icons/fc";
 import Cards from "../../components/Cards/Cards";
-import Whatsapp from "../../components/Whatsapp/Whatsapp";
+import imagenInicio from "../../assets/pngegg.png";
+
 const Home = () => {
   const dispatch = useDispatch(); // Usa useDispatch como una función
 
@@ -34,42 +34,47 @@ const Home = () => {
         <div className={style.containerNav}>
           <Header />
         </div>
-        <div class={`animate__animated animate__backInDown ${style.image}`}>
+        <div className={style.bloqueInicio}>
+          <div>
+            <div class={`animate__animated animate__backInDown ${style.image}`}>
+              <img
+                src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_nvjh7f.png"
+                alt=""
+                width="100px"
+              />
+              <h1>
+                TECNO<span>MINERALES</span>
+              </h1>
+              <p>Arenas & Gravas S.A.S</p>
+              <div class="animate__animated animate__fadeInRight">
+                <p>NIT: 901.674.891-6</p>
+                <p>REGISTRO CAR Nro. 59</p>
+                <p>REGISTRO CAR Nro. 60</p>
+              </div>
+            </div>
+            <div
+              className={style.containerImages}
+              class="animate__animated animate__fadeInLeft"
+            >
+              <div className={style.imageCertificados}>
+                <img
+                  src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697035700/TecnoMateriales/sello_ceritifcacion-removebg-preview_or5q5a.png"
+                  alt="Car Certificado"
+                />
+                <img
+                  src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697035700/TecnoMateriales/la_car-removebg-preview_qusgdz.png"
+                  alt="CAR logo"
+                />
+              </div>
+            </div>
+          </div>
           <img
-            src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697084862/TecnoMateriales/logo_nvjh7f.png"
+            src={imagenInicio}
             alt=""
-            width="100px"
+            class="animate__animated animate__backInRight"
+            className={style.imagenInicio}
           />
-          <h1>
-            TECNO<span>MINERALES</span>
-          </h1>
-          <p>Arenas & Gravas S.A.S</p>
-          <div class="animate__animated animate__fadeInRight">
-            <p>NIT: 901.674.891-6</p>
-            <p>REGISTRO CAR Nro. 59</p>
-            <p>REGISTRO CAR Nro. 60</p>
-          </div>
-
-
         </div>
-        <div className={style.containerImages}>
-          <div
-            class="animate__animated animate__fadeInLeft"
-            className={style.imageCertificados}
-          >
-            <img
-              src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697035700/TecnoMateriales/sello_ceritifcacion-removebg-preview_or5q5a.png"
-              alt="Car Certificado"
-            />
-            <img
-              src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697035700/TecnoMateriales/la_car-removebg-preview_qusgdz.png"
-              alt="CAR logo"
-            />
-          </div>
-         
-        </div>
-
-       
       </div>
       <div className={style.subTitulo}>
         <h2>Nuestra maquinaria</h2>
@@ -83,34 +88,34 @@ const Home = () => {
       <div className={style.containerBeneficios}>
         <div className={style.beneficios}>
           <div>
-            <h4>
-              {" "}
-              <FcApproval /> Certificación
-            </h4>
+            <h3>
+              <FcApproval />
+              CERTIFICACIÓN
+            </h3>
             <p>
-              Certificamos la disposición de sus escombros de forma rápida y
-              segura.
+              Certificamos el recibo, gestion y el aprovechamiento de los
+              Residuos de Construccion y Demolicion - RCD's.
             </p>
           </div>
           <div>
-            <h4>
-              {" "}
+            <h3>
               <FcInspection />
-              Regulación
-            </h4>
+              REGULACIÓN
+            </h3>
             <p>
-              Estamos avalados por la Secretaria Dstrital de Ambiente con el pin
-              xxxx-xx-xxxx
+              Estamos avalados por la CAR, mediante el Registro No 59, Municipio
+              de Cota y el Registro No 60, Municipio de Tenjo.
             </p>
           </div>
           <div>
-            <h4>
+            <h3>
               <FcDiploma2 />
-              Cumplimiento
-            </h4>
+              CUMPLIMIENTO
+            </h3>
             <p>
-              Aseguramos la adecuada disposición de los materiales para el
-              cuidado del medio ambiente, autorizados con la resolución xxxx/xx
+              Aseguramos el adecuado recibo para la gestion y aprovechamiento de
+              materiales para coadyuvar al cuidado del Ambiente y
+              su sostenibilidad.
             </p>
           </div>
         </div>
@@ -145,7 +150,7 @@ const Home = () => {
             <FaTimesCircle className={style.iconNoApto} /> Materiales no aptos:
           </h3>
           <div>
-            <h4>Residuos Peligrosos</h4>
+            <h4>Residuos Peligrosos:</h4>
             <div className={style.containerIconText}>
               <p>
                 Desechos de productos químicos, emulsiones, alquitrán, pinturas,
@@ -174,12 +179,13 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={style.subTitulo}>
-        <h2>Recibimos</h2>
-      </div>
+      <section id="Servicios">
+        <div className={style.subTitulo}>
+          <h2>Recibimos</h2>
+        </div>
 
-      <Cards servicios={servicios} />
-     
+        <Cards servicios={servicios} />
+      </section>
     </div>
   );
 };

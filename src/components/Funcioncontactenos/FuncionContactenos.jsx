@@ -1,21 +1,19 @@
-
-import React from 'react';
-import {  useNavigate } from "react-router-dom";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { FaWhatsapp } from "react-icons/fa";
 
 const FuncionContactenos = () => {
-
-  
   const navigate = useNavigate();
 
   const handleNavigate = () => {
     navigate("/contactenos");
-  };
+  };
 
   return (
-    <div>
-    <button onClick={handleNavigate}>Contactenos</button>
-    </div>
+    <button>
+      CONTACTENOS <FaWhatsapp />
+    </button>
   );
-}
+};
 
 export default FuncionContactenos;
