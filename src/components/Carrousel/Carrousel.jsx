@@ -9,7 +9,7 @@ const contentStyle = {
   background: "#364d79",
 };
 const Carrousel = () => (
-  <Carousel effect="fade" className={style.carrousel}>
+  <Carousel effect="fade" autoplay className={style.carrousel}>
     <div className={style.image}>
       <img
         src="https://res.cloudinary.com/dou3yyisb/image/upload/v1697073792/TecnoMateriales/maquinaria8-ia_gcsmno.jpg"
