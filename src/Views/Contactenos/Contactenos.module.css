@@ -13,6 +13,14 @@
   background-color: orange;
 }
 
+.titleContacto {
+  color: orange;
+  margin: 20px;
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 900;
+}
+
 @media (max-width: 750px) {
   .contenedorprincipal {
     flex-direction: column;

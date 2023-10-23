@@ -57,7 +57,6 @@ export default function AboutUs() {
         <h3 className={style.subTitulo}>¿Por qué elegirnos?</h3>
         <p className={style.parrafoDos}>
           <p>
-            {" "}
             TECNO MINERALES Arenas & Gravas S.A.S, NIT, 901.674.891-6, es una
             organización dedicada a la ingeniería aplicada en las áreas de
             construcción y saneamiento básico asumiendo el compromiso de
@@ -89,7 +88,7 @@ export default function AboutUs() {
             disminución en el impacto ambiental generado por el sector de la
             construcción, ampliando la actual capacidad operativa de la compañía
             y el área de cobertura.
-          </p>{" "}
+          </p>
           <br />
           <p>
             Los Residuos de Construcción y Demolición – RCD, antes denominados
@@ -97,7 +96,7 @@ export default function AboutUs() {
             susceptibles de ser aprovechados mediante transformación y
             reincorporación como materia prima de agregados en la fabricación de
             nuevos productos (Castaño y otros, 2013).
-          </p>{" "}
+          </p>
           <br />{" "}
           <p>
             Al respecto, Botero (2003) citado por Escandón (2011) menciona que
