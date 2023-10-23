@@ -7,14 +7,16 @@ const Card = (props) => {
   return (
     <article className={style.cardcontainer}>
       <div className={style.cardtitle}>
-        <Link to={`/servicios/${id}`}>
-          <img src={props.imagen} className={style.image} alt="img" />
-        </Link>
+        <img src={props.imagen} className={style.image} alt="img" />
       </div>
       <div className={style.carddivisor} />
       <div className={style.cardinfo}>
         <h4>{props.nombre}</h4>
-        <FuncionContactenos />
+      </div>
+      <div className={style.cardFooter}>
+        <Link to={props.whatsapp} target="_blank">
+          <FuncionContactenos className={style.FuncionContactenos} />
+        </Link>
       </div>
     </article>
   );

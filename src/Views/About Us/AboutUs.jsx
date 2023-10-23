@@ -15,10 +15,10 @@ export default function AboutUs() {
         <div className={style.bloqueUno}>
           <h3 className={style.subTitulo}>¿Quienes somos?</h3>
           <p className={style.parrafo}>
-            TECNO MINERALES Arenas & Gravas sas, NIT, 901.674.891-6, es una
+            TECNO MINERALES Arenas & Gravas S.A.S, NIT, 901.674.891-6, es una
             empresa naciente con profesionales de alta experiencia en el área de
             ingeniería y asuntos ambientales, la planta TECNO MINERALES Arenas &
-            Gravas s.a.s. NIT, 901.674.891-6, la cual está orientada a presentar
+            Gravas S.A.S. NIT, 901.674.891-6, la cual está orientada a presentar
             lineamientos ambientales para el correcto desarrollo de los procesos
             que involucran el aprovechamiento de residuos de construcción y
             demolición, pétreos y pétreos asfálticos.
@@ -58,7 +58,7 @@ export default function AboutUs() {
         <p className={style.parrafoDos}>
           <p>
             {" "}
-            TECNO MINERALES Arenas & Gravas s.a.s, NIT, 901.674.891-6, es una
+            TECNO MINERALES Arenas & Gravas S.A.S, NIT, 901.674.891-6, es una
             organización dedicada a la ingeniería aplicada en las áreas de
             construcción y saneamiento básico asumiendo el compromiso de
             prevención de la contaminación y mejora continua, dentro de los
@@ -79,16 +79,16 @@ export default function AboutUs() {
             sociales, entre los cuales uno de los más relevantes es el del
             incremento del volumen de RCD, por la ejecución de obras de
             servicios públicos, infraestructura y urbanismo, además,
-            relacionadas en los ocios de construcción, demolición, excavación,
-            remodelación, instalación y limpieza.
+            relacionadas en los trabajos de construcción, demolición,
+            excavación, remodelación, instalación y limpieza.
           </p>{" "}
           <br />{" "}
           <p>
             Con esta actividad se reincorporan materiales, que actualmente se
             consideran de desecho, al ciclo productivo y a la vez, lograr una
             disminución en el impacto ambiental generado por el sector de la
-            construcción, ampliando la actual capacidad operativa de la
-            compañía, aumentando el área de cobertura.
+            construcción, ampliando la actual capacidad operativa de la compañía
+            y el área de cobertura.
           </p>{" "}
           <br />
           <p>
