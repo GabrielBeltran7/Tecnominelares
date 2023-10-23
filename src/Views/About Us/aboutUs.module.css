@@ -13,9 +13,10 @@
 }
 
 .tituloAbout h1 {
-  background-color: orange;
-  width: 90%;
+  width: fit-content;
   padding: 10px;
+  color: orange;
+  font-style: italic;
 }
 
 .tituloAbout h2 {

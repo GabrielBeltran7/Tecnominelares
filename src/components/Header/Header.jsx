@@ -47,7 +47,7 @@ const Header = () => {
             </a>
             <a
               className={style.navItem}
-              href="#Servicios"
+              href={"/inicio" ? "/#Servicios" : "/inicio/#Servicios"}
               onClick={handleMenuItemClick}
             >
               Servicios
