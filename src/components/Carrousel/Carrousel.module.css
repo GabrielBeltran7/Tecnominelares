@@ -19,7 +19,7 @@
 }
  */
 
-.image {
+/* .image {
   background: linear-gradient(rgba(255, 174, 0, 0.13), rgba(255, 174, 0, 0.575)),
     url(https://res.cloudinary.com/dou3yyisb/image/upload/v1697073792/TecnoMateriales/maquinaria8-ia_gcsmno.jpg);
   height: 30rem;
@@ -103,6 +103,11 @@
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
+}  */
+.imageOcho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image h3 {
@@ -120,4 +125,44 @@
   font-size: 25px;
   font-weight: 800;
   letter-spacing: 15px;
+}
+
+.carrousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carrousel img {
+  width: 1000px;
+  height: 550px;
+  display: block; /* Asegura que la imagen se comporte como un bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1020px) {
+  .carrousel img {
+    width: 800px;
+    height: 400px;
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .carrousel img {
+    width: 500px;
+    height: 300px;
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carrousel img {
+    width: 400px;
+    height: 250px;
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
 }

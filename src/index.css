@@ -54,3 +54,7 @@ ul.ant-dropdown-menu.ant-dropdown-menu-root.ant-dropdown-menu-vertical.ant-dropd
   justify-content: center;
   align-items: center;
 }
+
+:where(.css-dev-only-do-not-override-amq5gd).ant-carousel .slick-dots li {
+  color: black;
+}
