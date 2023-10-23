@@ -65,6 +65,7 @@
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
+  overflow: visible;
 }
 .imageCinco {
   background: linear-gradient(rgba(255, 174, 0, 0.13), rgba(255, 174, 0, 0.13)),
@@ -78,6 +79,25 @@
 .imageSeis {
   background: linear-gradient(rgba(255, 174, 0, 0.13), rgba(255, 174, 0, 0.13)),
     url(https://res.cloudinary.com/dou3yyisb/image/upload/v1697748223/TecnoMateriales/WhatsApp_Image_2023-10-10_at_9.34.22_PM_2_hkjulh.jpg);
+  height: 30rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+.imageSiete {
+  background: linear-gradient(rgba(255, 174, 0, 0.13), rgba(255, 174, 0, 0.13)),
+    url(https://res.cloudinary.com/dou3yyisb/image/upload/v1697748216/TecnoMateriales/WhatsApp_Image_2023-10-06_at_6.29.01_PM_2_dxp7cx.jpg);
+  height: 30rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+.imageOcho {
+  background: linear-gradient(rgba(255, 174, 0, 0.13), rgba(255, 174, 0, 0.13)),
+    url(https://res.cloudinary.com/dou3yyisb/image/upload/v1697748216/TecnoMateriales/WhatsApp_Image_2023-10-06_at_6.29.01_PM_wegtan.jpg);
   height: 30rem;
   background-position: center;
   background-repeat: no-repeat;
