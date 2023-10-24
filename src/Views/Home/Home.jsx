@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 import { FcApproval, FcInspection, FcDiploma2 } from "react-icons/fc";
 import Cards from "../../components/Cards/Cards";
-import imagenInicio from "../../assets/demoledora.jpeg";
+import imagenInicio from "../../assets/demoledora.png";
 
 const Home = () => {
   const dispatch = useDispatch(); // Usa useDispatch como una función
