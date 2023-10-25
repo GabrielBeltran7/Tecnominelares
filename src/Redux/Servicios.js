@@ -16,7 +16,7 @@ export const servicios = [
   },
   {
     id: 2,
-    nombre: "RESIDUOS DE CONSTRUCCION Y DEMOLICION-RCD",
+    nombre: "RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN - RCD",
     imagen:
       "https://res.cloudinary.com/dou3yyisb/image/upload/v1697748231/TecnoMateriales/WhatsApp_Image_2023-10-06_at_6.29.00_PM_2_lxbfqr.jpg",
     descripcion: `Nuestro servicio de excavación es la respuesta a tus necesidades de preparación de terrenos y excavación para 
@@ -42,7 +42,7 @@ export const servicios = [
   // },
   {
     id: 4,
-    nombre: "DEMOLICION",
+    nombre: "DEMOLICIÓN",
     imagen:
       "https://www.torosdemoliciones.com/wp-content/uploads/2018/02/D-284-02-600x300.jpg",
     descripcion: `Nuestro servicio de demolición ofrece una solución completa para derribar edificios y 

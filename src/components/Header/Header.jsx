@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import style from "./Header.module.css";
 import { FaBars } from "react-icons/fa";
 
-//cuando yo presiono en el menu hmb lo tengo cheked cuando presiono en un item se vaya el checked
-// crear un estado que cambie el valor si yo presiono en un elemento
-//y que ese valor false esté en el checked
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState();
@@ -57,7 +55,7 @@ const Header = () => {
               href="/contactenos"
               onClick={handleMenuItemClick}
             >
-              Contactenos
+              Contáctenos
             </a>
           </div>
         </div>

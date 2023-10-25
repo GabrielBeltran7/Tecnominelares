@@ -93,8 +93,8 @@ const Home = () => {
               CERTIFICACIÓN
             </h3>
             <p>
-              Certificamos el recibo, gestion y el aprovechamiento de los
-              Residuos de Construccion y Demolicion - RCD's.
+            Certificamos el recibo, gestión y el aprovechamiento de los
+             Residuos de Construcción y Demolición. - RCD's.
             </p>
           </div>
           <div>
@@ -113,7 +113,7 @@ const Home = () => {
               CUMPLIMIENTO
             </h3>
             <p>
-              Aseguramos el adecuado recibo para la gestion y aprovechamiento de
+              Aseguramos el adecuado recibo para la gestión y aprovechamiento de
               materiales para coadyuvar al cuidado del Ambiente y
               su sostenibilidad.
             </p>
@@ -132,7 +132,7 @@ const Home = () => {
             <p>Tierras y materiales pétreos no contaminados</p>
           </div>
           <div>
-            <h4>Productos usados para cimentaciones y pillotajes:</h4>
+            <h4>Productos usados para cimentaciones y pilotajes:</h4>
 
             <p> Arcillas, Limos, Lodos inertes.</p>
           </div>
@@ -163,7 +163,7 @@ const Home = () => {
             <h4>Residuos especiales:</h4>
             <div className={style.containerIconText}>
               <p>
-                Poliestireno-icopor, carton-yeso (drywall), asbesto, lodos
+                Poliestireno-icopor, cartón-yeso (drywall), asbesto, lodos
                 residuales de compuestos, asfalto.
               </p>
             </div>
