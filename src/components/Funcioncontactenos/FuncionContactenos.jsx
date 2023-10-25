@@ -11,7 +11,7 @@ const FuncionContactenos = () => {
 
   return (
     <button>
-      CONTACTENOS <FaWhatsapp />
+      CONTÁCTENOS <FaWhatsapp />
     </button>
   );
 };
